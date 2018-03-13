@@ -23,7 +23,7 @@ class updateStatus extends React.Component{
         if(this.state.value){
             axios.put(FORUM_ENDPOINT + id, data)
                 .then(resp => {
-                    swal("Complete", "Forum status updated", "success");
+                    swal("Complete", "Forum status updated", "Success");
                     this.props.getAllForums();
                 }
             )
